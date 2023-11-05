@@ -1,5 +1,10 @@
+<label>Add</label>
+<input type="text" class="form-control" (input)="onUpdatedAdd($event)" />
 <div class="container__searchbar">
-    <div class="searchbar">
-        <button class="btn btn-primary" [disabled]="!#" (click)="">Add</button>
-    </div>
+  <div class="searchbar">
+    <button class="btn btn-primary" [disabled]="!allowAdd" (click)="onAdd()">
+      Add
+    </button>
+  </div>
+  <p>{{ creationStatus }}</p>
 </div>
