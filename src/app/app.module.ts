@@ -6,6 +6,7 @@ import { LogoComponent } from './header/logo/logo.component';
 import { SearchComponent } from './header/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { NgModel } from '@angular/forms';
+import { Directive } from '@angular/core';
 
 @NgModule({
   declarations: [
@@ -17,9 +18,10 @@ import { NgModel } from '@angular/forms';
 
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+//    Directive
   ],
-  
+
   providers: [],
   bootstrap: [AppComponent],
 })

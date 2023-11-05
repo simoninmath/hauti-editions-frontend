@@ -1,3 +1,4 @@
+<!-- champ et bouton qui font apparaitre la value -->
 <label>Add</label>
 <input type="text" class="form-control" (input)="onUpdatedAdd($event)" />
 <div class="container__searchbar">
@@ -6,9 +7,41 @@
       Add
     </button>
   </div>
+  <p [innerText]="allowAdd"></p>
   <p>{{ creationStatus }}</p>
   <p>{{ addName }}</p>
-  <input [(ngModel)]="addName" name="name" type="text" class="form-control">
+  <input [(ngModel)]="addName" name="name" type="text" class="form-control" />
 </div>
+
+<!-- bouton qui reset le champ d'un form sans Méthode -->
 <label>Username</label>
-<input type="text" class="form-control" />
+<input type="text" class="form-control" [(ngModel)]="username" />
+<p>username</p>
+<button
+  class="btn btn-primary"
+  [disabled]="username === ''"
+  (click)="username = ''"
+>
+  Reset User
+</button>
+
+<!-- Directives -->
+<button turnToRed>Testing Directives</button>
+<p *ngIf="serverCreated" ; else noServer>
+  Server was created! Server name is {{ addName }}
+</p>
+<ng-template #noServer>
+  <p>No server</p>
+</ng-template>
+<p
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{ online: serverStatus === 'online' }"
+>
+  {{ "Server" }} with ID {{ serverId }} is {{ getServerStatus }}
+</p>
+
+<!-- ngFor (boucle) -->
+<button class="btn btn-primary" (click)="showSecret = !showSecret">
+  Display Details
+</button>
+<p>Secret Psw = tuna</p>
