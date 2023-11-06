@@ -4,12 +4,10 @@ import { Component, Directive, OnInit } from '@angular/core';
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss'],
-  styles: [
-    `
+  styles: [`
       .online {
         color: 'red';
-      }
-    `,
+      }`,
   ],
 })
 
@@ -28,6 +26,9 @@ export class SearchComponent implements OnInit {
   serverId = '0001';
   servers = ['TestServer', 'TestAgain'];
   showSecret = false;
+  log = [];
+  incrementNumber: number = 6;
+  numberOfClick: number = 1;
 
   constructor() {
     this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
@@ -65,5 +66,11 @@ export class SearchComponent implements OnInit {
 
   getColor() {
     return this.serverStatus === 'offline' ? 'green' : 'red';
+  }
+
+  onToggleDetails() {
+    this.showSecret = !this.showSecret;
+    // this.log.push(this.log.length + 1);
+    this.log.push(this.log.length + 1);
   }
 }
