@@ -1,0 +1,41 @@
+.search {
+    position: absolute;
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 700px;
+    height: 6%;
+    top: 6%;
+    right: 20%;
+    background-color: #fefefe;
+    border: 1px solid;
+    border-color: #121212;
+}
+
+.img__pictoLoup--black {
+    position: absolute;
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+    top: 5%;
+    right: 0.3%;
+}
+
+.input__searchBar--initialState {
+    position: absolute;
+    display: flex;
+    flex: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    text-decoration: none;
+    border: 0px;
+    width: 90%;
+    height: 90%;
+    top: 6%;
+    left: 0.5%;
+    background-color: #f7f3f3;
+}
