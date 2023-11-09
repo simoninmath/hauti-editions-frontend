@@ -6,9 +6,11 @@ import { NgModel } from '@angular/forms';
 import { Directive } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './header/search/search.component';
+import { ButtonComponent } from './header/button/button.component';
+import { NavComponent } from './header/nav/nav.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SearchComponent],
+  declarations: [AppComponent, HeaderComponent, SearchComponent, ButtonComponent, NavComponent],
 
   imports: [BrowserModule, FormsModule],
 
