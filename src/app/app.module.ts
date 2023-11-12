@@ -8,9 +8,11 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './header/search/search.component';
 import { ButtonComponent } from './header/button/button.component';
 import { NavComponent } from './header/nav/nav.component';
+import { AccountComponent } from './account/account.component';
+import { NewAccountComponent } from './new-account/new-account.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SearchComponent, ButtonComponent, NavComponent],
+  declarations: [AppComponent, HeaderComponent, SearchComponent, ButtonComponent, NavComponent, AccountComponent, NewAccountComponent],
 
   imports: [BrowserModule, FormsModule],
 
