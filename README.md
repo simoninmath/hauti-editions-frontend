@@ -1,5 +1,12 @@
-# HautiEditionsFrontend
+# Ha'uti Editions 
 
+![Screenshot1](Screenshot1-HautiEd.png)
+![Screenshot1](Screenshot2-HautiEd.png)
+![Screenshot1](Screenshot3-HautiEd.png)
+![Screenshot1](Screenshot4-HautiEd.png)
+![Screenshot1](Screenshot5-HautiEd.png)
+
+## Project
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
 
 ## Development server
