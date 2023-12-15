@@ -1,5 +1,5 @@
 # Ha'uti Editions 
-
+![Thumbnail](landingpage-thumbnail.jpg)
 ![Screenshot1](Screenshot1-HautiEd.png)
 ![Screenshot1](Screenshot2-HautiEd.png)
 ![Screenshot1](Screenshot3-HautiEd.png)
